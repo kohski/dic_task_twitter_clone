@@ -1,3 +1,43 @@
 // Place all the styles related to the tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#tweet_entry{
+  width:60%;
+  border:solid 1px #87ceeb;
+  border-radius:3px 3px 3px 3px / 3px 3px 3px 3px;
+  background-color:#ffffff;
+  margin:auto;
+}
+#tweet_header{
+  border-bottom:solid 1px #87ceeb;
+}
+
+#tweet_content{
+  background-color:#e0ffff;
+  padding:5px;
+  height:135px;
+  border-radius:3px 3px 3px 3px / 3px 3px 3px 3px;
+}
+
+#tweet_entry form{
+  margin:auto;
+}
+#tweet_entry textarea{
+  width:90%;
+  height:75px;
+  margin:10px 10px 3px 10px;
+}
+#tweet_entry h1{
+  font-size:12px;
+  text-align:center;
+  margin:5px;
+}
+#tweet_entry input[type="submit"]{
+  display:block;
+  margin:0 0 0 auto;
+  padding:10px;
+  border:none;
+  border-radius:30% 30% 30% 30%/50% 50% 50% 50%;
+  background-color:#afeeee;
+}

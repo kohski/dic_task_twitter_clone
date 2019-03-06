@@ -1,0 +1,12 @@
+<div id="tweet_entry">
+  <div id="tweet_header">
+    <h1>Comfirm the Tweet</h1>
+  </div>
+  <div id="tweet_content">
+    <%= form_with(model: @tweet,local: true, url: tweets_path ) do |form| %>
+      <%= form.hidden_field :tweet %>
+      <p><%= @tweet[:tweet]["tweet"] %></p>
+      <%= form.submit 'Tweet' %>
+    <% end%>  
+  </div>
+</div>

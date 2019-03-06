@@ -1,0 +1,15 @@
+<div id="tweet_entry">
+  <div id="tweet_header">
+    <% if @tweet.tweet == nil %>
+      <h1>Compose new Tweet</h1>    
+    <% else %>
+      <h1>Edit the Tweet</h1>
+    <% end %>
+  </div>
+  <div id="tweet_content">
+    <%= form_with(model: @tweet,local: true,url: confirm_tweets_path ) do |form| %>
+      <%= form.text_area :tweet, :placeholder => "What\'s happening?" %>
+      <%= form.submit 'Tweet' %>
+    <% end%>  
+  </div>
+</div>
